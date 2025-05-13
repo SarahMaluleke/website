@@ -30,7 +30,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install --global turbo@2.5
-          npm i
+          npm ci
 
       - name: Build
         run: turbo build
