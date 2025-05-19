@@ -17,6 +17,7 @@
 
 # Generated files
 .idea/**/contentModel.xml
+.idea/
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
@@ -124,8 +125,8 @@ fabric.properties
 /coverage
 
 # next.js
-/.next/
-/out/
+.next/
+out/
 
 # production
 /build
@@ -141,7 +142,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+.env*
+!.env.example
 
 # vercel
 .vercel
