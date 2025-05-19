@@ -39,9 +39,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run Build Task
-        run: turbo build --filter=cms
-
       - name: Run Migrations
         run: pnpm --filter=cms migrate
         env:
