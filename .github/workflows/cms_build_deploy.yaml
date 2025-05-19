@@ -2,12 +2,9 @@
 name: Vercel Deployment For CMS
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
-    paths:
-      - "apps/cms/**"
 
 permissions:
   contents: read
