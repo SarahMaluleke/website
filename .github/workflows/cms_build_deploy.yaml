@@ -44,6 +44,9 @@ jobs:
 
       - name: Run Migrations
         run: pnpm --filter=cms migrate
+        env:
+          PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
+          DATABASE_URI: ${{ secrets.DATABASE_URI }}
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
